@@ -1,0 +1,113 @@
+<!-- Produced by Jarrek Holmes -->
+<!-- March 26, 2017 -->
+<!-- All images courtesy of Prantl's Bakery -->
+
+<html lang = "eng">
+	<head>
+	
+		<meta charset = "utf-8" />
+		<meta name = "author" content = "Jarrek Holmes">
+		<meta name = "keywords" content = "Prantl Bakery">
+		<meta name = "description" content = "Prantl's Bakery Website">
+		
+		<title> Prantl's Bakery - Contact</title>
+		
+		<!-- <link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> -->
+		<!-- Above is for used fonts -->
+		<link rel="shortcut icon" href="Images/Prantl Logo.png">
+		<link rel = "stylesheet" media = "all" href = "CSS/styles.css" />
+	
+		<script type = "text/javascript" src = "JS/jquery-3.1.1.min.js"></script>
+		<script type = "text/javascript" src = "JS/scripts.js"></script>
+	</head>
+
+		<!-- Nav-Bar Beginning -->
+		<div id = "nav-bar">
+			<a href = "location.html" onmouseover = "highlight('nav_1')" onmouseout = "lowlight('nav_1')">
+				<div id = "nav_1">
+					Store Info
+				</div>
+			</a>
+			
+			<div id = "vt">
+			</div>
+			
+			<a href = "events.html" onmouseover = "highlight('nav_2')" onmouseout = "lowlight('nav_2')">
+				<div id = "nav_2" >
+					Events
+				</div>
+			</a>	
+				
+			<a href = "index.html">	
+				<img id = "logo" src = "Images/Prantl Logo Large.jpg">
+			</a>
+			
+			<a href = "about.html" onmouseover = "highlight('nav_3')" onmouseout = "lowlight('nav_3')">
+				<div id = "nav_3">
+					About Us
+				</div>
+			</a>
+			
+			<div id = "vt">
+			</div>
+			
+			<a href = "contact.html">
+				<div id = "nav_4">
+					<b>Contact&nbsp;Form</b>
+					<!-- Current Page -->
+				</div>
+			</a>
+			<hr>
+		</div>
+		<!-- Nav-Bar End -->
+		
+		<!-- Begin Contact Form -->
+		<div id = "contact-container">
+			<h2>Contact Form: </h2>
+			</h3> &nbsp;&nbsp;&nbsp; Please submit your message to Prantl's below. </h3>
+				<form id = "contact_form" onsubmit = "return validate()" method="post" action="http://www.andrew.cmu.edu/cgi-bin/mailto">
+				<input name="MailTo" type="hidden" value="jrholmes@andrew.cmu.edu" />
+				<input name="MailCC" type="hidden" value="jeriaq@andrew.cmu.edu" /> <!-- Sends an email to Prof. Q --> <!-- ************IMPORTANT************ -->
+				<!-- <input name="MailCC" type="hidden" value="infoneeded@prantlsbakery.com" /> UNABLE TO COMPLETE SO AS NOT TO SPAM PRANTL'S--> 
+					<ol>
+						<li> 
+							Name: <font color = "red">*</font><br>
+							<input type="text" name = "Name: " class = "forminput" placeholder = "John Doe" maxlength = "250" size = "40" required><br/>
+						<br/> </li>
+						<li>
+							Zipcode:<br>
+							<input type = "text" name = "Zipcode:" class = "forminput" maxlength = "5" size = "40" placeholder = "00000"> <br/>
+						<br/></li>
+						<li>
+							Please provide your email address:  <font color = "red">*</font><br>
+							<input type = "email" name = "Email: " class = "forminput" size = "40" placeholder = "abc@def.com" required><br>
+						<br></li>
+						<li>
+							Do you want to receive store updates by email? <br>
+							&nbsp; &nbsp;  &nbsp; <input type = "checkbox" id = "update" class = "forminput" name = "Update? "><font size = "2vw"> Yes, Please Update Me! </font><br>
+						<br></li>
+						<hr> <br>
+						<li> 
+							Message:  <font color = "red">*</font><br>
+							<textarea name = "Message: " lass = "forminput" maxlength = "5000" required></textarea> 
+						<br></li><br>
+					</ol>
+					<input id = "submit" type = "submit" value = "Submit">
+				</form>
+		</div>
+		<!-- End Contact Form -->
+		
+		<!-- Begin Footer -->
+		<div id = "footer">
+			<hr/>
+			<div id = "footer-text"><br>
+			<img src = "Images/Prantl Logo.png"></img> <br> <br>
+				&copy; Prantl's Bakery 2017 <br/><br><br><br>
+				Connect With Us On Social Media!<br> <br> 
+				<a class = "footerimg" href = "https://www.instagram.com/prantls_bakery/" target = "_blank"><img src = "Images/instagram.png"></a>
+				<a class = "footerimg" href = "https://twitter.com/prantlsbakery" target = "_blank"><img src = "Images/twitter.png"></a>
+				<a class = "footerimg" href = "https://www.facebook.com/PrantlsBakery" target = "_blank"><img src = "Images/facebook.png"></a>
+			</div>
+		</div>
+		<!-- End Footer -->
+</html>
